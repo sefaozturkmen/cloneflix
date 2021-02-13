@@ -1,6 +1,8 @@
-<div class="card bg-dark text-white" style="width: 18rem;">
-    <img class="card-img" src="../../assets/img/movie.jpg">
-    <div class="card-box d-flex justify-content-center align-items-center">
-        <h5 class="card-title ">More Info <i class="fas fa-arrow-right"></i></h5>
+<div class="d-flex flex-wrap">
+    <div class="card bg-dark text-white" matBadge="{{movie.vote_average}}" matBadgeSize="large" style="width: 17rem;" *ngFor="let movie of movieList">
+        <img class="card-img" [src]="[imgUrl+movie.poster_path]">
+        <div class="card-box d-flex justify-content-center align-items-center">
+            <h5 class="card-title ">More Info <i class="fas fa-arrow-right"></i></h5>
+        </div>
     </div>
 </div>

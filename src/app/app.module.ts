@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { SwiperModule } from 'swiper/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import {MatBadgeModule} from '@angular/material/badge';
+
 import { AppComponent } from './app.component';
 import { FirstpageComponent } from './pages/firstpage/firstpage.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
@@ -29,6 +32,8 @@ import { MovieListComponent } from './components/movie-list/movie-list.component
     AppRoutingModule,
     SwiperModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    MatBadgeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

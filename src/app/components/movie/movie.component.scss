@@ -1,5 +1,6 @@
             .card {
                 transition: .3s all linear;
+                margin: 10px;
                 .card-box {
                     position: absolute;
                     bottom: 0;
@@ -28,4 +29,14 @@
             
             * {
                 overflow: hidden;
+            }
+            
+            .mat-badge-large.mat-badge-overlap.mat-badge-after .mat-badge-content {
+                right: 10px;
+                top: 10px;
+                font-size: 17px;
+                width: 38px;
+                height: 38px;
+                line-height: 38px;
+                background-color: rgb(197, 201, 6);
             }
