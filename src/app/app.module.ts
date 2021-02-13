@@ -9,6 +9,8 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CategoryComponent } from './components/category/category.component';
+import { MovieComponent } from './components/movie/movie.component';
+import { MovieListComponent } from './components/movie-list/movie-list.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { CategoryComponent } from './components/category/category.component';
     HomepageComponent,
     MenuComponent,
     FooterComponent,
-    CategoryComponent
+    CategoryComponent,
+    MovieComponent,
+    MovieListComponent
   ],
   imports: [
     BrowserModule,
