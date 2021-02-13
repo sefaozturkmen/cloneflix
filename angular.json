@@ -34,7 +34,7 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "node_modules/bootswatch/dist/lux/bootstrap.min.css",
+                            "node_modules/bootswatch/dist/cyborg/bootstrap.min.css",
                             "node_modules/bootstrap/dist/css/bootstrap.min.css",
                             "node_modules/sweetalert2/dist/sweetalert2.min.css",
                             "src/styles.scss"
