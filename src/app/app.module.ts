@@ -14,6 +14,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CategoryComponent } from './components/category/category.component';
 import { MovieComponent } from './components/movie/movie.component';
 import { MovieListComponent } from './components/movie-list/movie-list.component';
+import { SliderComponent } from './components/slider/slider.component';
+import { AboutComponent } from './components/about/about.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { MovieListComponent } from './components/movie-list/movie-list.component
     FooterComponent,
     CategoryComponent,
     MovieComponent,
-    MovieListComponent
+    MovieListComponent,
+    SliderComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
