@@ -16,6 +16,7 @@ import { MovieComponent } from './components/movie/movie.component';
 import { MovieListComponent } from './components/movie-list/movie-list.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { AboutComponent } from './components/about/about.component';
+import { AccordionComponent } from './components/accordion/accordion.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { AboutComponent } from './components/about/about.component';
     MovieComponent,
     MovieListComponent,
     SliderComponent,
-    AboutComponent
+    AboutComponent,
+    AccordionComponent
   ],
   imports: [
     BrowserModule,
