@@ -1,31 +1,49 @@
-@import '~@angular/material/theming';
+@import "~@angular/material/theming";
+
 @include mat-core();
 $cloneflix-primary: mat-palette($mat-indigo);
 $cloneflix-accent: mat-palette($mat-pink, A200, A100, A400);
 $cloneflix-warn: mat-palette($mat-red);
-$cloneflix-theme: mat-light-theme(( color: ( primary: $cloneflix-primary, accent: $cloneflix-accent, warn: $cloneflix-warn, )));
+$cloneflix-theme: mat-light-theme(
+  (
+    color: (
+      primary: $cloneflix-primary,
+      accent: $cloneflix-accent,
+      warn: $cloneflix-warn
+    )
+  )
+);
 @include angular-material-theme($cloneflix-theme);
-@import '~swiper/swiper-bundle';
+@import "~swiper/swiper-bundle";
+
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
+  
+  
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
     background-color: #141414;
+
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+
 }
 
 .btn {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 .card {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 .card-img {
+
+  
     border-radius: 0;
 }
 
@@ -48,3 +66,10 @@ body {
     font-weight: 700;
     opacity: 1;
 }
+
+
+
+  border-radius: 0;
+}
+
+

@@ -14,6 +14,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CategoryComponent } from './components/category/category.component';
 import { MovieComponent } from './components/movie/movie.component';
 import { MovieListComponent } from './components/movie-list/movie-list.component';
+import { SliderComponent } from './components/slider/slider.component';
+import { AboutComponent } from './components/about/about.component';
+import { AccordionComponent } from './components/accordion/accordion.component';
 import { MiniSliderComponent } from './mini-slider/mini-slider.component';
 
 
@@ -27,7 +30,11 @@ import { MiniSliderComponent } from './mini-slider/mini-slider.component';
     CategoryComponent,
     MovieComponent,
     MovieListComponent,
+    SliderComponent,
+    AboutComponent,
+    AccordionComponent,
     MiniSliderComponent
+
   ],
   imports: [
     BrowserModule,
