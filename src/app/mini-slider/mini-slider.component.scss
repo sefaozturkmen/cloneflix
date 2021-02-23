@@ -1,0 +1,42 @@
+* {
+    transition: .2s all linear;
+}
+
+h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.img-fluid {
+    border-radius: 4px;
+}
+
+.slider-box {
+    margin-top: 20px;
+}
+
+.about-box {
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+    color: #fff;
+    opacity: 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.movie-box {
+    background-color: black;
+    height: 100%;
+    margin: 0 3px;
+}
+
+.movie-box:hover .img-fluid {
+    opacity: 0.7;
+}
+
+.movie-box:hover .about-box {
+    transform: translateY(-10px);
+    opacity: 1;
+}

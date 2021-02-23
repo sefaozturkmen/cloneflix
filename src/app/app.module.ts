@@ -17,6 +17,7 @@ import { MovieListComponent } from './components/movie-list/movie-list.component
 import { SliderComponent } from './components/slider/slider.component';
 import { AboutComponent } from './components/about/about.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
+import { MiniSliderComponent } from './mini-slider/mini-slider.component';
 
 
 @NgModule({
@@ -31,7 +32,9 @@ import { AccordionComponent } from './components/accordion/accordion.component';
     MovieListComponent,
     SliderComponent,
     AboutComponent,
-    AccordionComponent
+    AccordionComponent,
+    MiniSliderComponent
+
   ],
   imports: [
     BrowserModule,
@@ -40,6 +43,7 @@ import { AccordionComponent } from './components/accordion/accordion.component';
     BrowserAnimationsModule,
     HttpClientModule,
     MatBadgeModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
