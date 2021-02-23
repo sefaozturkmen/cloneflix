@@ -14,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CategoryComponent } from './components/category/category.component';
 import { MovieComponent } from './components/movie/movie.component';
 import { MovieListComponent } from './components/movie-list/movie-list.component';
+import { MiniSliderComponent } from './mini-slider/mini-slider.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { MovieListComponent } from './components/movie-list/movie-list.component
     FooterComponent,
     CategoryComponent,
     MovieComponent,
-    MovieListComponent
+    MovieListComponent,
+    MiniSliderComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +36,7 @@ import { MovieListComponent } from './components/movie-list/movie-list.component
     BrowserAnimationsModule,
     HttpClientModule,
     MatBadgeModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

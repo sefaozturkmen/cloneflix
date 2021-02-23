@@ -1,0 +1,51 @@
+<div class="slider-box">
+    <div>
+        <h3>
+            Popular
+        </h3>
+    </div>
+    <swiper [config]="config" style="max-height: 150px;">
+        <ng-template swiperSlide *ngFor="let movie of popularList">
+            <div class="movie-box">
+                <img class="img-fluid" [src]="[imgUrl+movie.backdrop_path]">
+                <div class="about-box">
+                    <span> {{movie.title}} </span>
+                </div>
+            </div>
+        </ng-template>
+    </swiper>
+</div>
+<div class="slider-box">
+    <div>
+        <h3>
+            Top Rated
+        </h3>
+    </div>
+    <swiper [config]="config" style="max-height: 150px;">
+        <ng-template swiperSlide *ngFor="let movie of topRatedList">
+            <div class="movie-box">
+                <img class="img-fluid" [src]="[imgUrl+movie.backdrop_path]">
+                <div class="about-box">
+                    <span> {{movie.title}} </span>
+                </div>
+            </div>
+        </ng-template>
+    </swiper>
+</div>
+<div class="slider-box">
+    <div>
+        <h3>
+            Latest
+        </h3>
+    </div>
+    <swiper [config]="config" style="max-height: 150px;">
+        <ng-template swiperSlide *ngFor="let movie of latestList">
+            <div class="movie-box">
+                <img class="img-fluid" [src]="[imgUrl+movie.backdrop_path]">
+                <div class="about-box">
+                    <span> {{movie.title}} </span>
+                </div>
+            </div>
+        </ng-template>
+    </swiper>
+</div>
