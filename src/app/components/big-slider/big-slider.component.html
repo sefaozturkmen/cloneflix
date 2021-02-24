@@ -1,0 +1,35 @@
+<div class="swiper-container">
+  <swiper [config]="config" style="height: 500px; width: 800px;">
+    <ng-template swiperSlide *ngFor="let movie of topRatedList">
+      <div class="movie-box">
+        <img
+          class="img-fluid"
+          style="height: 500px; width: 800px;"
+          [src]="[imgUrl + movie.backdrop_path]"
+        />
+        <div class="row d-flex flex-column">
+          <div class="col-3">
+            <div class="about-box">
+              <span> {{ movie.title }} </span>
+              <span class="vote"> {{ movie.vote_average }}/10</span>
+            </div>
+          </div>
+
+          <div class="col-9">
+            <div class="overviewText">
+              <span> {{ movie.overview }} </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </swiper>
+  <!-- <span slot="container-start">Container Start</span>
+  <div class="swiper-wrapper">
+    <span slot="wrapper-start">Wrapper Start</span>
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <span slot="wrapper-end">Wrapper End</span>
+  </div>
+  <span slot="container-end">Container End</span> -->
+</div>
