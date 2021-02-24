@@ -22,15 +22,9 @@ body {
 }
 
 body {
-  
-  
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-color: #141414;
-
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-
+  background-color: #141414;
 }
 
 .btn {
@@ -42,34 +36,26 @@ body {
 }
 
 .card-img {
-
-  
-    border-radius: 0;
+  border-radius: 0;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-    color: #fff!important;
+  color: #fff !important;
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-    font-size: 28px;
-    font-weight: 700;
-    transition: .1s all linear;
-    opacity: 0.7;
+  font-size: 28px;
+  font-weight: 700;
+  transition: 0.1s all linear;
+  opacity: 0.7;
 }
 
 .swiper-button-prev:hover::after,
 .swiper-button-next:hover::after {
-    font-size: 38px;
-    font-weight: 700;
-    opacity: 1;
-}
-
-
-
+  font-size: 38px;
+  font-weight: 700;
+  opacity: 1;
   border-radius: 0;
 }
-
-
