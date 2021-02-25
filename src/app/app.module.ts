@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import {MatBadgeModule} from '@angular/material/badge';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { FirstpageComponent } from './pages/firstpage/firstpage.component';
@@ -14,7 +15,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CategoryComponent } from './components/category/category.component';
 import { MovieComponent } from './components/movie/movie.component';
 import { MovieListComponent } from './components/movie-list/movie-list.component';
-import { MiniSliderComponent } from './mini-slider/mini-slider.component';
+import { MiniSliderComponent } from './components/mini-slider/mini-slider.component';
+import { LoginComponent } from './components/login/login.component';
+import { AccountService } from './services/account.service';
+import { LoginGuard } from './login.guard';
+
 
 
 @NgModule({
@@ -27,7 +32,8 @@ import { MiniSliderComponent } from './mini-slider/mini-slider.component';
     CategoryComponent,
     MovieComponent,
     MovieListComponent,
-    MiniSliderComponent
+    MiniSliderComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -36,9 +42,11 @@ import { MiniSliderComponent } from './mini-slider/mini-slider.component';
     BrowserAnimationsModule,
     HttpClientModule,
     MatBadgeModule,
-    SwiperModule
+    ReactiveFormsModule,
+    FormsModule,
+    
   ],
-  providers: [],
+  providers: [AccountService,LoginGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
