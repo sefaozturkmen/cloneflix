@@ -1,0 +1,47 @@
+.swiper-container {
+    padding-top: 40px;
+    background: rgba($color: #1d1c1c, $alpha: 1);
+}
+.about-box {
+    position: absolute;
+    left: 1em;
+    bottom: 0px;
+    color: #fff;
+    opacity: 0;
+    font-size: 1.25rem;
+    font-weight: 650;
+    line-height: 8mm;
+}
+.vote{
+
+    font-size: .85rem;
+    font-weight: 450;
+}
+.overviewText {
+    position: absolute;
+    left: .9em;
+    bottom: 0px;
+    color: #fff;
+    opacity: 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.movie-box:hover .overviewText {
+    transform: translateY(-50px);
+    opacity: 1;
+}
+
+.movie-box:hover .img-fluid {
+    opacity: .6;
+}
+
+.movie-box:hover .about-box {
+    transform: translateY(-170px);
+    opacity: 1;
+}
+
+.movie-box:hover .vote {
+    transform: translateY(-70px);
+    opacity: 1;
+}
