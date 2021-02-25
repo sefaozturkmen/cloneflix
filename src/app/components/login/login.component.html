@@ -16,10 +16,30 @@
             <form [formGroup]="loginForm" (ngSubmit)="login();">
                 <div class="input-control">
                     <input class="input-item" type="text" formControlName="username" placeholder="Username">
+                    <div *ngIf="loginUsername?.invalid && loginUsername?.parent?.touched && loginUsername?.dirty">
+                        <ul class="error-messages">
+                            <li *ngIf="loginUsername?.errors?.required">
+                                {{errorMessages.required}}
+                            </li>
+                            <li *ngIf="loginUsername?.errors?.pattern">
+                                {{errorMessages.error}}
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class=" input-control ">
                     <input class="input-item" [type]="showLoginPassword " formControlName="password" placeholder="Password">
                     <input class="password-visibilty" (click)="onLoginPasswordChecked() " type="checkbox">
+                    <div *ngIf="loginPassword?.invalid && loginPassword?.parent?.touched && loginPassword?.dirty">
+                        <ul class="error-messages">
+                            <li *ngIf="loginPassword?.errors?.required">
+                                {{errorMessages.required}}
+                            </li>
+                            <li *ngIf="loginPassword?.errors?.pattern">
+                                {{errorMessages.error}}
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="btn-control ">
                     <button class="btn-submit">Login</button>
@@ -31,10 +51,30 @@
             <form [formGroup]="registerForm" (ngSubmit)="register();">
                 <div class="input-control">
                     <input class="input-item" type="text" formControlName="username" placeholder="Username">
+                    <div *ngIf="registerUsername?.invalid && registerUsername?.parent?.touched && registerUsername?.dirty">
+                        <ul class="error-messages">
+                            <li *ngIf="registerUsername?.errors?.required">
+                                {{errorMessages.required}}
+                            </li>
+                            <li *ngIf="registerUsername?.errors?.pattern">
+                                {{errorMessages.error}}
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class=" input-control ">
                     <input class="input-item" [type]="showLoginPassword " formControlName="password" placeholder="Password">
                     <input class="password-visibilty" (click)="onLoginPasswordChecked() " type="checkbox">
+                    <div *ngIf="registerPassword?.invalid && registerPassword?.parent?.touched && registerPassword?.dirty">
+                        <ul class="error-messages">
+                            <li *ngIf="registerPassword?.errors?.required">
+                                {{errorMessages.required}}
+                            </li>
+                            <li *ngIf="registerPassword?.errors?.pattern">
+                                {{errorMessages.error}}
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="btn-control ">
                     <button class="btn-submit">Register</button>

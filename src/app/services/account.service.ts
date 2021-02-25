@@ -6,45 +6,46 @@ import { User } from '../models';
   providedIn: 'root'
 })
 export class AccountService implements OnInit {
- 
+
   constructor(private router: Router) { }
 
   registeredUserList: User[] = [];
-
+  registeredUserListFromLS: User[] = [];
   loggedIn = false;
-  ngOnInit(): void {}
-  
+
+  ngOnInit(): void { }
+
+  //add user value to the list then add list to LS
   register(user: any) {
     this.registeredUserList.push({ ...user });
-    console.log(this.registeredUserList)
     localStorage.setItem("registeredUserList", JSON.stringify(this.registeredUserList))
   }
 
-
-  registeredUserListFromLS: User[] = [];
+  //call the userList from LS
   login(user: User): boolean {
     const registeredUserList: any = localStorage.getItem("registeredUserList")
     this.registeredUserListFromLS = JSON.parse(registeredUserList)
+    //comparing the list and user value
     var i;
     for (i = 0; i < this.registeredUserListFromLS.length; i++) {
       if (this.registeredUserListFromLS[i].username === user.username && this.registeredUserListFromLS[i].password === user.password) {
-        console.log('work')
-        console.log(this.loggedIn)
         this.loggedIn = true;
-        console.log(this.loggedIn)
         this.router.navigate(["home"])
         return true
       }
     }
+    alert('Kullanıcı Bulunamadı')
     return false
   }
 
+  //return the loggedIn value
   isLoggedIn() {
     return this.loggedIn;
   }
 
-  logOut(){
-    this.loggedIn =false;
+  //logout function
+  logOut() {
+    this.loggedIn = false;
   }
 
 }
