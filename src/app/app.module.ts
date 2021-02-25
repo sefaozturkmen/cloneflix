@@ -7,10 +7,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import {MatBadgeModule} from '@angular/material/badge';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-import { MatBadgeModule } from '@angular/material/badge';
-
-
 import { AppComponent } from './app.component';
 import { FirstpageComponent } from './pages/firstpage/firstpage.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
@@ -30,7 +26,7 @@ import { LoginGuard } from './login.guard';
 
 import { AboutComponent } from './components/about/about.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
-import { MiniSliderComponent } from './components/mini-slider/mini-slider.component';
+;
 import { BigSliderComponent } from './components/big-slider/big-slider.component';
 
 
@@ -44,18 +40,11 @@ import { BigSliderComponent } from './components/big-slider/big-slider.component
     CategoryComponent,
     MovieComponent,
     MovieListComponent,
-
-    
     MiniSliderComponent,
-    LoginComponent
-
-    
+    LoginComponent,
     AboutComponent,
     AccordionComponent,
-    MiniSliderComponent,
     BigSliderComponent
-
-    
   ],
   imports: [
     BrowserModule,
