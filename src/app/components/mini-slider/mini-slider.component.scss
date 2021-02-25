@@ -1,7 +1,14 @@
 * {
     transition: .2s all linear;
+
+  
+}
+
+
+
    
 }
+
 
 
 h3 {
@@ -16,7 +23,13 @@ h3 {
 
 .slider-box {
     margin-top: 20px;
+
   
+}
+
+
+ 
+
 
 .about-box {
     position: absolute;
@@ -41,5 +54,9 @@ h3 {
 .movie-box:hover .about-box {
     transform: translateY(-10px);
     opacity: 1;
+
+  
 }
+
+
 }

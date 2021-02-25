@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand"> LOGO</a>
-        <button class="btn btn-outline-success" type="">Login</button>
+        <a routerLink="/" class="navbar-brand">LOGO</a>
+        <a routerLink="/home" class="navbar-brand">Movies</a>
+        <button *ngIf="!isLogin()" class="btn btn-outline-success" routerLink="/login">Login</button>
+        <button *ngIf="isLogin()" class="btn btn-outline-success" (click)="logOut()" routerLink="/">LogOut</button>
     </div>
 </nav>

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MovieService } from 'src/app/services/movie.service';
+
+
+
 import SwiperCore, {
   Navigation,
   Pagination,

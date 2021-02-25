@@ -1,0 +1,45 @@
+<div class="login-bg"></div>
+<app-menu></app-menu>
+
+<div class="login-container">
+    <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#login" type="button" role="tab" aria-selected="true">Giriş Yap</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#register" type="button" role="tab" aria-selected="false">Kayıt Ol</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="login-title">Login</div>
+            <form [formGroup]="loginForm" (ngSubmit)="login();">
+                <div class="input-control">
+                    <input class="input-item" type="text" formControlName="username" placeholder="Username">
+                </div>
+                <div class=" input-control ">
+                    <input class="input-item" [type]="showLoginPassword " formControlName="password" placeholder="Password">
+                    <input class="password-visibilty" (click)="onLoginPasswordChecked() " type="checkbox">
+                </div>
+                <div class="btn-control ">
+                    <button class="btn-submit">Login</button>
+                </div>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="login-title">Register</div>
+            <form [formGroup]="registerForm" (ngSubmit)="register();">
+                <div class="input-control">
+                    <input class="input-item" type="text" formControlName="username" placeholder="Username">
+                </div>
+                <div class=" input-control ">
+                    <input class="input-item" [type]="showLoginPassword " formControlName="password" placeholder="Password">
+                    <input class="password-visibilty" (click)="onLoginPasswordChecked() " type="checkbox">
+                </div>
+                <div class="btn-control ">
+                    <button class="btn-submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
