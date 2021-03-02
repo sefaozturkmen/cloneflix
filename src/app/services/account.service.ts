@@ -19,6 +19,7 @@ export class AccountService implements OnInit {
   register(user: any) {
     this.registeredUserList.push({ ...user });
     localStorage.setItem("registeredUserList", JSON.stringify(this.registeredUserList))
+    this.setLoggedInLS();
   }
 
   //call the userList from LS
@@ -30,6 +31,7 @@ export class AccountService implements OnInit {
     for (i = 0; i < this.registeredUserListFromLS.length; i++) {
       if (this.registeredUserListFromLS[i].username === user.username && this.registeredUserListFromLS[i].password === user.password) {
         this.loggedIn = true;
+        this.setLoggedInLS();
         this.router.navigate(["home"])
         return true
       }
@@ -40,12 +42,17 @@ export class AccountService implements OnInit {
 
   //return the loggedIn value
   isLoggedIn() {
-    return this.loggedIn;
+    return localStorage.getItem("logged");
   }
 
   //logout function
   logOut() {
     this.loggedIn = false;
+    this.setLoggedInLS();
+  }
+
+  setLoggedInLS(){
+    localStorage.setItem("logged", JSON.stringify(this.loggedIn))
   }
 
 }

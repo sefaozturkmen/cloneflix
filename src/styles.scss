@@ -1,61 +1,51 @@
 @import "~@angular/material/theming";
-
 @include mat-core();
 $cloneflix-primary: mat-palette($mat-indigo);
 $cloneflix-accent: mat-palette($mat-pink, A200, A100, A400);
 $cloneflix-warn: mat-palette($mat-red);
-$cloneflix-theme: mat-light-theme(
-  (
-    color: (
-      primary: $cloneflix-primary,
-      accent: $cloneflix-accent,
-      warn: $cloneflix-warn
-    )
-  )
-);
+$cloneflix-theme: mat-light-theme( ( color: ( primary: $cloneflix-primary, accent: $cloneflix-accent, warn: $cloneflix-warn)));
 @include angular-material-theme($cloneflix-theme);
 @import "~swiper/swiper-bundle";
-
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: #141414;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: #141414!important;
 }
 
 .btn {
-  border-radius: 0;
+    border-radius: 0;
 }
 
 .card {
-  border-radius: 0;
+    border-radius: 0;
 }
 
 .card-img {
-  border-radius: 0;
+    border-radius: 0;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #fff !important;
+    color: #fff !important;
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  font-size: 28px;
-  font-weight: 700;
-  transition: 0.1s all linear;
-  opacity: 0.7;
+    font-size: 28px;
+    font-weight: 700;
+    transition: 0.1s all linear;
+    opacity: 0.7;
 }
 
 .swiper-button-prev:hover::after,
 .swiper-button-next:hover::after {
-  font-size: 38px;
-  font-weight: 700;
-  opacity: 1;
-  border-radius: 0;
+    font-size: 38px;
+    font-weight: 700;
+    opacity: 1;
+    border-radius: 0;
 }

@@ -13,11 +13,16 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  isLogin(): boolean {
-    return this.accountService.isLoggedIn()
+  isLogin(): Boolean {
+   const isLogin:any = this.accountService.isLoggedIn()
+
+   if(isLogin == 'true'){
+     return true
+   }
+   return false
   }
 
-  logOut(){
+  logOut() {
     this.accountService.logOut()
   }
 }
