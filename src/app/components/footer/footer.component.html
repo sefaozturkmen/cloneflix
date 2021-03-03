@@ -1,1 +1,13 @@
-<p>footer works!</p>
+<div class="footer-container d-flex flex-column flex-sm-row mt-5">
+    <div class="card" *ngFor="let dev of devList">
+        <img [src]="[imgUrl+dev.image]" class="image mx-auto">
+        <div class="card-body d-flex flex-column ">
+            <div class="justify-content-center d-flex name">{{ dev.name }}</div>
+            <ul class="d-flex list-group flex-row justify-content-center">
+                <li><a href="{{ 'mailto:'+dev.mail }}"><i class="far fa-envelope"></i></a></li>
+                <li><a href="{{ dev.github }}"><i class="fab fa-github"></i></a> </li>
+                <li><a href="{{ dev.linkedin }}"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>

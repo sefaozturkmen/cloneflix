@@ -1,0 +1,35 @@
+li {
+    list-style: none;
+}
+
+* {
+    transition: ease all .2s;
+}
+
+.card {
+    background-color: rgba(20, 20, 20);
+    color: #636c73;
+    width: 100%;
+    .image {
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .name {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        cursor: default;
+        &:hover {
+            color: #fff;
+        }
+    }
+    .fab,
+    .far {
+        font-size: 26px;
+        color: #636c73;
+        margin: 0px 15px;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
