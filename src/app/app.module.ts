@@ -45,8 +45,8 @@ import { FirstPageSliderComponent } from './components/first-page-slider/first-p
     AboutComponent,
     AccordionComponent,
     BigSliderComponent,
-    MovieDetailComponent
-    FirstPageSliderComponent,
+    MovieDetailComponent,
+    FirstPageSliderComponent
     
   ],
   imports: [
