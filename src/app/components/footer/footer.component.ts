@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DevList } from 'src/app/datasources/dev-list';
+import { Dev } from 'src/app/models';
 
 @Component({
   selector: 'app-footer',
@@ -6,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+
+  imgUrl='../../../assets/img/'
+
+  devList: Dev[] = DevList
 
   constructor() { }
 

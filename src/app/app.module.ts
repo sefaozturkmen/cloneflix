@@ -28,6 +28,7 @@ import { AboutComponent } from './components/about/about.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 ;
 import { BigSliderComponent } from './components/big-slider/big-slider.component';
+import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { BigSliderComponent } from './components/big-slider/big-slider.component
     LoginComponent,
     AboutComponent,
     AccordionComponent,
-    BigSliderComponent
+    BigSliderComponent,
+    MovieDetailComponent
   ],
   imports: [
     BrowserModule,
