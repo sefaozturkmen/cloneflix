@@ -10,9 +10,10 @@ li {
     background-color: rgba(20, 20, 20);
     color: #636c73;
     width: 100%;
+    border: 0;
     .image {
         max-width: 150px;
-        max-height: 150px;
+        max-height: 100px;
     }
     .name {
         font-size: 20px;
