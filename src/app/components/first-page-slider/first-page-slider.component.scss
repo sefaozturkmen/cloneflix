@@ -1,0 +1,34 @@
+.swiper-container {
+    background: rgba($color: #1d1c1c, $alpha: 1);
+
+}
+.about-box {
+    position: absolute;
+    left: 2em;
+    bottom: 0px;
+    color: #fff;
+    opacity: 0;
+    font-size: 1rem;
+    font-weight: 650;
+    line-height: 8mm;
+}
+.vote{
+
+    font-size: 1.25rem;
+    font-weight: 450;
+}
+
+.movie-box:hover .img-fluid {
+    opacity: .6;
+}
+
+.movie-box:hover .about-box {
+    transform: translateY(-20px);
+    opacity: 1;
+}
+
+.movie-box:hover .vote {
+    transform: translateY(-30px);
+    opacity: 1;
+}
+
