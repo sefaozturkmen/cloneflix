@@ -28,9 +28,8 @@ import { AboutComponent } from './components/about/about.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 ;
 import { BigSliderComponent } from './components/big-slider/big-slider.component';
+import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { FirstPageSliderComponent } from './components/first-page-slider/first-page-slider.component';
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +45,9 @@ import { FirstPageSliderComponent } from './components/first-page-slider/first-p
     AboutComponent,
     AccordionComponent,
     BigSliderComponent,
-    FirstPageSliderComponent
+    MovieDetailComponent
+    FirstPageSliderComponent,
+    
   ],
   imports: [
     BrowserModule,
