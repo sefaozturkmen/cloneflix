@@ -7,22 +7,27 @@ import { Observable } from 'rxjs';
 })
 export class MovieService {
 
-  popular='https://api.themoviedb.org/3/movie/popular?api_key=7ab603f7fd8c4c10192cd9822304f83c&page=1'
-  topRated='https://api.themoviedb.org/3/movie/top_rated?api_key=7ab603f7fd8c4c10192cd9822304f83c&page=1'
-  latest='https://api.themoviedb.org/3/trending/all/day?api_key=7ab603f7fd8c4c10192cd9822304f83c'
+  popular='https://api.themoviedb.org/3/movie/popular'
+  topRated='https://api.themoviedb.org/3/movie/top_rated'
+  latest='https://api.themoviedb.org/3/trending/all/day'
+  
+  path='https://api.themoviedb.org/3/movie/'
+  key='?api_key=7ab603f7fd8c4c10192cd9822304f83c'
   constructor(private http: HttpClient) { }
 
   getPopular():Observable<any>{
-    return this.http.get<any>(this.popular)
+    return this.http.get<any>(this.popular+this.key)
   }
 
   getTopRated():Observable<any>{
-    return this.http.get<any>(this.topRated)
+    return this.http.get<any>(this.topRated+this.key)
   }
 
   getLatest():Observable<any>{
-    return this.http.get<any>(this.latest)
+    return this.http.get<any>(this.latest+this.key)
   }
 
-
+  getMovieById(movieId:any):Observable<any>{
+    return this.http.get<any>(this.path+movieId+this.key)
+  }
 }
