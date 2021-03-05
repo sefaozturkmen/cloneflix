@@ -1,16 +1,18 @@
+
 .swiper-container {
     padding-top: 40px;
-    background: rgba($color: #1d1c1c, $alpha: 1);
+    background: #141414;
 }
 .about-box {
     position: absolute;
-    left: 1em;
+    left: 1.5em;
     bottom: 0px;
     color: #fff;
     opacity: 0;
     font-size: 1.25rem;
     font-weight: 650;
     line-height: 8mm;
+    transition: .3s all linear;
 }
 .vote{
 
@@ -19,12 +21,13 @@
 }
 .overviewText {
     position: absolute;
-    left: .9em;
+    left: 1.75em;
     bottom: 0px;
     color: #fff;
     opacity: 0;
     font-size: 1rem;
     font-weight: 400;
+    transition: .3s all linear;
 }
 
 .movie-box:hover .overviewText {

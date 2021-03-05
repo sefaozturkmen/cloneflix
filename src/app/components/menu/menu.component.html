@@ -1,8 +1,9 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a routerLink="/" class="navbar-brand">LOGO</a>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a routerLink="/" class="navbar-brand" href="https://fontmeme.com/netflix-font/"><img class="logo text-left" src="https://fontmeme.com/permalink/210303/9dd4438dc3168eb3b8d470ae49458a2a.png" alt="netflix-font" border="0"></a>
+     
         <a routerLink="/home" class="navbar-brand">Movies</a>
-        <button *ngIf="!isLogin()" class="btn btn-outline-success" routerLink="/login">Login</button>
-        <button *ngIf="isLogin()" class="btn btn-outline-success" (click)="logOut()" routerLink="/">LogOut</button>
+        <button *ngIf="!isLogin()" class="btn btn-outline-danger" routerLink="/login">Login</button>
+        <button *ngIf="isLogin()" class="btn btn-outline-danger" (click)="logOut()" routerLink="/">Log Out</button>
     </div>
 </nav>
