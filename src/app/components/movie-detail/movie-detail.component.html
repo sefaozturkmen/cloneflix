@@ -1,0 +1,12 @@
+<div class="movie-container mt-5">
+    <div class="row flex-sm-row-reverse">
+        <div class="col-md-7 col-12  image-container"><img class="img-fluid" [src]="imgUrl+movie.backdrop_path"></div>
+        <div class="col-12 col-md-5">
+            <div class="movie-box">
+                <div class="title"> {{ movie.title }}</div>
+                <div class="text"> {{ movie.overview }} </div>
+                <div class="rate"> {{ movie.vote_average}} </div>
+            </div>
+        </div>
+    </div>
+</div>

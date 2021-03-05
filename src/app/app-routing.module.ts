@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginGuard } from './login.guard';
-
 import { LoginComponent } from './components/login/login.component';
 import { FirstpageComponent } from './pages/firstpage/firstpage.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
-import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { MiniSliderComponent } from './components/mini-slider/mini-slider.component';
+import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 
 
 const routes: Routes = [
@@ -16,7 +15,7 @@ const routes: Routes = [
   { path: "home", component: HomepageComponent, canActivate:[LoginGuard],
           children:[
             {path:"",component:MiniSliderComponent},
-            {path:"movieDetail",component:MovieDetailComponent}
+            {path:"movieDetail/:movieId",component: MovieDetailComponent}
           ]},
   { path: "login", component: LoginComponent},
   { path: '**', component: FirstpageComponent },
