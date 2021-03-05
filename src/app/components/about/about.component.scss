@@ -1,15 +1,19 @@
-.content{  
-    background-color:#141414;
-    padding: 100px 0;
-    color: rgba($color: #e4dcc4, $alpha: 1.0);
-
+.content {
+  background-color: #141414;
+  padding: 100px 0;
+  color: rgba($color: #e4dcc4, $alpha: 1);
 }
-
-
-
 
 .text {
- font-size: 1rem;
- word-spacing: .3mm;
- line-height: 7mm;
+  font-size: 100%;
+  word-spacing: 0.3mm;
+  line-height: 7mm;
 }
+
+@media (min-width: 0px) and (max-width: 1000px) {
+  .text {
+    margin-top: -40px;
+    font-size: 80%;
+  }
+}
+

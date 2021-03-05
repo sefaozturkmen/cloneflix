@@ -23,7 +23,7 @@
     </div>
     <swiper [config]="config" style="max-height: 150px;">
         <ng-template swiperSlide *ngFor="let movie of topRatedList">
-            <div class="movie-box">
+            <div class="movie-box" routerLink="movieDetail/{{movie.id}}">
                 <img class="img-fluid" [src]="[imgUrl+movie.backdrop_path]">
                 <div class="about-box">
                     <span> {{movie.title}} </span>
@@ -40,7 +40,7 @@
     </div>
     <swiper [config]="config" style="max-height: 150px;">
         <ng-template swiperSlide *ngFor="let movie of latestList">
-            <div class="movie-box">
+            <div class="movie-box" routerLink="movieDetail/{{movie.id}}">
                 <img class="img-fluid" [src]="[imgUrl+movie.backdrop_path]">
                 <div class="about-box">
                     <span> {{movie.title}} </span>

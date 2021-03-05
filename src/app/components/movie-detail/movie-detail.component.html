@@ -1,11 +1,14 @@
 <div class="movie-container mt-5">
     <div class="row flex-sm-row-reverse">
-        <div class="col-md-7 col-12  image-container"><img class="img-fluid" [src]="imgUrl+movie.backdrop_path"></div>
-        <div class="col-12 col-md-5">
+        <div class="col-md-6 col-12  image-container"><img class="movieImg img-fluid pb-4" [src]="imgUrl+movie.backdrop_path"></div>
+        <div class="col-12 col-md-6">
             <div class="movie-box">
-                <div class="title"> {{ movie.title }}</div>
+                <div class="title pb-4"> {{ movie.title }}</div>
                 <div class="text"> {{ movie.overview }} </div>
-                <div class="rate"> {{ movie.vote_average}} </div>
+                <div class="rate pt-3 pb-4"> Vote: {{ movie.vote_average}} </div>
+                <div class="releaseDate pt-1">Release Date: {{ movie.release_date }}</div>
+                <div class="originalTitle pt-1">Original title: {{ movie.original_title}}</div>
+                <div class="originalLanguage pt-1">Original Language: {{ movie.original_language}}</div>
             </div>
         </div>
     </div>

@@ -1,18 +1,31 @@
-@media(min-width:768px) {
-    .movie-container {
-        background: linear-gradient(90deg, #141414 46%, rgba(0, 0, 0, 0) 100%);
-        z-index: 2323;
-    }
+@media (min-width: 768px) {
+  .movie-container {
+    background: linear-gradient(90deg, #141414 40%, rgba(0, 0, 0, 0) 100%);
+    z-index: 2323;
+  }
 }
 
 .movie-container {
-    .image-container {
-        z-index: -1;
+    margin-left: 7em;
+  .image-container {
+    z-index: -1;
+   
+  }
+  .movie-box {
+    color: #fff;
+    .title {
+      font-size: 2rem;
+      line-height: 8mm;
     }
-    .movie-box {
-        color: #fff;
-        .title {
-            font-size: 22px;
-        }
+    .rate {
+      color: #df1a28;
+      font-size: 1.25rem;
     }
+
+    .text {
+      line-height: 7mm;
+    }
+  }
+
+  
 }
